@@ -1,0 +1,45 @@
+# This file is used as an alternative if ux0:tai/config.txt is not found.
+# For users plugins, you must refresh taiHEN from HENkaku Settings for
+# changes to take place.
+# For kernel plugins, you must reboot for changes to take place.
+
+*KERNEL
+# henkaku.skprx is hard-coded to load and is not listed here
+# For Adrenaline double tap fix
+ux0:app/PSPEMUCFW/sce_module/adrenaline_kernel.skprx
+ur0:vitacheat/vitacheat.skprx
+ur0:tai/0syscall6.skprx
+ur0:tai/nonpdrm.skprx
+ur0:tai/repatch.skprx
+ur0:tai/PSVshell.skprx
+ur0:tai/kubridge.skprx
+# removes brightness and wifi restrictions for games
+ur0:tai/NoPowerLimits.skprx
+# increases max/decreases min brightness, disabled by default
+# ur0:tai/vitabright.skprx
+# ITLS
+ur0:tai/itls.skprx
+# YAMT
+ur0:tai/yamt_helper.skprx
+
+*main
+# main is a special titleid for SceShell
+ur0:tai/henkaku.suprx
+ux0:data/VitaDB/vdb_daemon.suprx
+# shows battery percentage near the gauge
+ur0:tai/shellbat.suprx
+# screenshots are png instead of jpg
+ur0:tai/pngshot.suprx
+
+# YAMT
+*NPXS10015
+ur0:tai/yamt.suprx
+
+*NPXS10015
+# this is for modifying the version string
+ur0:tai/henkaku.suprx
+*NPXS10016
+# this is for modifying the version string in settings widget
+ur0:tai/henkaku.suprx
+
+
